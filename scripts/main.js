@@ -82,11 +82,11 @@ $(document).ready(function() {
 
             var thisSpotId = spot1.id;
             var thisSpotAvailable = spot1.available;
-            if(spot1.available === true) {
-                $(this).css('background', '#fff');
-                console.log($(this));
-                console.log('yayess!');
-            }
+            // if(spot1.available === true) {
+            //     $(this).css('background', '#fff');
+            //     console.log($(this));
+            //     console.log('yayess!');
+            // }
             console.log(thisSpotId, thisSpotAvailable);
 
             // if(thisSpotAvailable === true) {
@@ -95,7 +95,6 @@ $(document).ready(function() {
             // if(thisSpotAvailable === false) {
             //     $(this).css({ background: '#F5B041' });
             // }
-
 
             var spot2 = newSpotsArray[1];
             var spot3 = newSpotsArray[2];
