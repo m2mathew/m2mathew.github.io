@@ -1,0 +1,257 @@
+@import 'normalize', 'variables';
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700|Lato|Open+Sans:400,700);
+
+
+/*-Header Styling-*/
+
+header {
+	background-color: $navy;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+	#logo {
+		font-family: $header-font;
+		font-weight: 700;
+		font-size: 2em;
+		text-decoration: none;
+		color: $orange;
+
+		svg {
+			height: 60px;
+			width: 60px;
+			margin: 20px 0 0 20px;
+		}
+
+		span {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 40px;
+		}
+	}
+
+	nav {
+		clear: both;
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			font-size: 1em;
+			font-family: $subheader-font;
+			font-weight: 700;
+			color: $navy;
+			background-color: $yellow;
+			border-radius: 20px;
+			padding: 10px;
+			display: inline-block;
+			margin: 20px 10px;
+
+			&:hover {
+				color: darken($navy,10%);
+				background-color: darken($yellow,10%);
+			}
+		}
+	}
+}
+
+/*-Sections styling-*/
+
+.subheader_directions {
+	font-family: $subheader-font;
+	font-weight: 400;
+	font-size: 1.7em;
+	color: $navy;
+	padding: 30px;
+}
+
+.new-restaurant {
+	background-color: $orange;
+	padding: 20px 10px;
+	font-family: $header-font;
+	font-weight: 700;
+	color: $gray;
+	font-size: 2em;
+	margin: 30px;
+	max-width: 200px;
+	// background: url('');
+	background-size: cover;
+
+	&:hover {
+		cursor: pointer;
+		background-color: darken($orange,30%);
+		color: darken($gray,30%);
+	}
+}
+
+.dash-border {
+	border-bottom: 4px dashed $yellow;
+	margin: 20px;
+}
+
+/*-parking page-*/
+
+.restaurant_addy {
+	font-family: $body-font;
+	font-size: 1.25em;
+	margin: 50px 30px 5px 30px;
+	color: $navy;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: solid $navy 3px;
+	border-bottom: solid $navy 3px;
+	max-width: 260px;
+}
+
+.parking_lot_wrapper {
+	padding: 5px 30px 30px 20px; 
+	max-width: 400px;
+
+	div {
+		background-color: $navy;
+		height: 60px;
+		width: 120px;
+		margin: 10px;
+		border-radius: 10px;
+		float: left;
+		display: inline-block;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+	}
+}
+
+/*-Sign in page-*/
+
+.box {
+  margin: 50px auto;
+  width:400px;
+  height:200px;
+}
+
+input[type="email"] {
+	font-family: $body-font;
+	appearance: none;
+	width:	380px;
+	height:	70px;
+	font-size:	3em;
+	background:	transparent;
+	border:	none;
+	border-bottom: dashed 3px $gray;
+	text-align:	center;
+	transition: border-color 0.6s ease;
+}
+
+::-webkit-input-placeholder {
+	color: $yellow;
+	transition: color 0.3s ease;
+}
+
+:focus::-webkit-input-placeholder {
+	color: transparent;
+	transition: color 0.3s ease;
+}
+
+
+input[type="email"]:focus {
+	outline: none;
+	border:	none;
+	border-bottom: dashed 3px $yellow;
+	transition: border-color 1s ease;
+}
+
+input[type="submit"] {
+	font-family: $body-font;
+	color: $gray;
+	appearance: none;
+	width:	380px;
+	height:	50px;
+	font-size:	1.05em;
+	background:	transparent;
+	border:	none;
+	text-align:	center;
+	letter-spacing:	0.15em;
+	text-transform:	uppercase;
+	transition: color 0.5s ease;
+	outline: none;
+	border:	none;
+}
+
+input[type="submit"]:hover {
+	color: $navy;
+	cursor:pointer;
+	transition: color 0.5s ease;
+}
+
+/*-background styling-*/
+
+section {
+	background-color: $blue;
+	padding-bottom: 50px;
+	padding-top: 1px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/*-Footer-*/
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: $navy;
+	clear: both;
+}
+
+@media screen and (min-width: 501px) {
+
+/*-Header-*/
+
+	header {
+		nav {
+			clear: none;
+			float: right;
+
+			a {
+				margin-right: 20px;
+			}
+		}
+	}
+
+
+/*-Parking Spots-*/
+
+	.restaurant_addy {
+		max-width: 380px;
+	}
+
+	.parking_lot_wrapper { 
+		max-width: 430px;
+
+		div {
+			height: 90px;
+			width: 180px;
+		}
+	}
+
+}
+
+@media screen and (min-width: 901px) {
+
+	.restaurant_left {
+		display: inline-block;
+		float: left;
+		min-width: 200px;
+	}
+
+	.parking_lot_right {
+		float: left;
+		display: inline-block;
+		margin-left: 100px;
+
+		.restaurant_addy {
+			margin-top: 30px;
+		}
+	}	
+}
+
+
