@@ -96,6 +96,7 @@ $(document).ready(function() {
             //     $(this).css({ background: '#F5B041' });
             // }
 
+
             var spot2 = newSpotsArray[1];
             var spot3 = newSpotsArray[2];
             var spot4 = newSpotsArray[3];
