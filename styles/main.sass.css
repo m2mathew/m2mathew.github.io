@@ -238,7 +238,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -390,7 +391,7 @@ header {
       display: inline-block;
       margin: 20px 10px; }
       header nav a:hover {
-        color: #1a242f;
+        color: #1a252f;
         background-color: #f29c11; }
 
 /*-Sections styling-*/
